@@ -56,12 +56,13 @@ Header(s)
      <summary>👉 <strong>예시 확인하기</strong> 👈</summary>
       <table>
           <tr>
-              <td><img src="https://github.com/user-attachments/assets/f20c45b9-67f1-471c-b339-3a262c0fcd6b" alt="_5" style="width: 150px; height: auto;"></td>
-              <td><img src="https://github.com/user-attachments/assets/74c7d423-9a79-4474-8d66-beaeec670b79" alt="_8" style="width: 150px; height: auto;"></td>
-              <td><img src="https://github.com/user-attachments/assets/4547c40a-1c08-4ceb-9872-b004c0efe4e2" alt="_9" style="width: 150px; height: auto;"></td>
-              <td><img src="https://github.com/user-attachments/assets/91ac0c7a-d128-49f7-b4e3-c6633c67ca4d" alt="_17" style="width: 150px; height: auto;"></td>
-              <td><img src="https://github.com/user-attachments/assets/5eeb1c3a-bbe5-4d84-aa2c-699164449a3f" alt="_18" style="width: 150px; height: auto;"></td>
-              <td><img src="https://github.com/user-attachments/assets/3577abd6-8fe8-4337-9506-d5eb1478f6d7" alt="_20" style="width: 150px; height: auto;"></td>
+              <td><img src="https://github.com/user-attachments/assets/fb36349e-c9bd-4529-8ed8-c243a45a4c0c" alt="_5" style="width: 150px; height: auto;"></td>
+              <td><img src="https://github.com/user-attachments/assets/ea9f9126-be9b-43de-9bbb-0a2c98f5e2e3" alt="_8" style="width: 150px; height: auto;"></td>
+              <td><img src="https://github.com/user-attachments/assets/3e250d4b-2157-426c-9193-7b0093cb357a" alt="_9" style="width: 150px; height: auto;"></td>
+              <td><img src="https://github.com/user-attachments/assets/97666b12-ddc5-4b2e-ab21-92acecb8ffbe" alt="_17" style="width: 150px; height: auto;"></td>
+              <td><img src="https://github.com/user-attachments/assets/f23245a0-c01c-49bc-a364-491d7160bb37" alt="_18" style="width: 150px; height: auto;"></td>
+              <td><img src="https://github.com/user-attachments/assets/43bbe24d-bf26-482b-b332-4be4022e3e5d" alt="_20" style="width: 150px; height: auto;"></td>
+              <td><img src="https://github.com/user-attachments/assets/6dd5bd46-fb90-4575-b164-80b18a0b6ea4" alt="_27" style="width: 150px; height: auto;"></td>
           </tr>
           <tr>
               <td style="text-align: center;">limit: 5</td>
@@ -70,6 +71,7 @@ Header(s)
               <td style="text-align: center;">limit: 17</td>
               <td style="text-align: center;">limit: 18</td>
               <td style="text-align: center;">limit: 20</td>
+              <td style="text-align: center;">limit: 27</td>
           </tr>
       </table>
    </details>
