@@ -55,6 +55,12 @@ Header(s)
    <details>
      <summary>👉 <strong>예시 확인하기</strong> 👈</summary>
       <table>
+  <tr>
+   <td colspan="7" align="center"><img src="https://github.com/user-attachments/assets/bffc525b-dbae-4fb5-98c8-51d7536656cc" style="width: 500px"></td>
+  </tr>
+       <tr>
+        <td colspan="7" align="center"><strong>그리드 패턴 예시</strong></td>
+       </tr>
           <tr>
               <td><img src="https://github.com/user-attachments/assets/fb36349e-c9bd-4529-8ed8-c243a45a4c0c" alt="_5" style="width: 150px; height: auto;"></td>
               <td><img src="https://github.com/user-attachments/assets/ea9f9126-be9b-43de-9bbb-0a2c98f5e2e3" alt="_8" style="width: 150px; height: auto;"></td>
