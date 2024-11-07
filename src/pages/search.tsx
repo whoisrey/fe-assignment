@@ -1,28 +1,71 @@
+import {useState} from 'react';
+
+import {useQuery} from '@tanstack/react-query';
+import {searchQuery} from '@/lib/data';
+
 import {Button} from '@/components/ui/button';
 import {Input} from '@/components/ui/input';
+import {Fallback} from '@/components/fallback';
 
 export const SearchPage = () => {
+  const [query, setQuery] = useState('');
+  const [limit, setLimit] = useState(12);
+
+  const {data, error, isLoading, refetch} = useQuery({
+    queryKey: ['searchResults', query, limit],
+    queryFn: () => searchQuery(query, limit),
+    enabled: false,
+  });
+
+  const handleQueryChange = (event: any) => {
+    setQuery(event.target.value);
+  };
+
+  const handleLimitChange = (event: any) => {
+    setLimit(event.target.value);
+  };
+
   return (
     <div className="p-4">
       <div className="flex flex-row gap-2">
         <Input
           className="flex-[10]"
           type="text"
-          defaultValue="브이하고 있는 사람"
+          value={query}
+          onChange={handleQueryChange}
           placeholder="검색어를 입력해 주세요."
         />
         <Input
           className="flex-1"
           type="number"
-          defaultValue={12}
+          value={limit}
+          onChange={handleLimitChange}
           min={0}
           placeholder="이미지 개수를 입력해 주세요."
         />
       </div>
 
-      <Button className="mt-2 w-full">검색</Button>
+      <Button
+        className="mt-2 mb-2 w-full"
+        onClick={() => refetch()}
+        disabled={isLoading}
+      >
+        검색
+      </Button>
 
-      {/* TODO: 아래에 이미지 그리드 코드를 완성해 주세요. */}
+      <div className="grid grid-cols-3 gap-1">
+        {isLoading ? (<Fallback />) : error ? <p>에러 발생: {error.message}</p> : (
+          data?.map((item: any) => (
+            <div key={item.id}>
+              <img
+                src={item.imageUrl}
+                alt={item.username}
+                className="aspect-square w-full h-full object-cover"
+              />
+            </div>
+          ))
+        )}
+      </div>
     </div>
   );
 };
