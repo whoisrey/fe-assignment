@@ -11,9 +11,17 @@ const Gallery = ({query, limit, isClicked}) => {
     queryKey: ['searchResults'],
     queryFn: () => searchQuery(query, limit),
     enabled: isClicked,
+    refetchOnWindowFocus: false,
   });
 
   usePreloadImages(imageItems);
+
+  const handleImageClick = shortcode => {
+    const newWindowOptions = 'noreferrer,noopener';
+    const instagramUrl = `https://www.instagram.com/p/${shortcode}`;
+
+    window.open(instagramUrl, '_blank', newWindowOptions);
+  };
 
   return (
     <div className="grid grid-cols-3 gap-[4px]">
@@ -23,9 +31,10 @@ const Gallery = ({query, limit, isClicked}) => {
           src={item.imageUrl}
           alt={item.username}
           className={clsx(
-            'h-full w-full object-cover',
+            'h-full w-full cursor-pointer object-cover',
             gridPlacement(index, imageItems.length)
           )}
+          onClick={() => handleImageClick(item.shortcode)}
         />
       ))}
     </div>
